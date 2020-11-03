@@ -38,3 +38,5 @@ export class TaskRepository extends Repository<Task> {
     return task;
   }
 }
+
+// a Reopsitory van kapcsolatban a Task Table-el az adatbázisban
