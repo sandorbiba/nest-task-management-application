@@ -28,6 +28,10 @@ export class Task extends BaseEntity {
     { eager: false },
   )
   user: User;
+  // definiálunk egy kapcsolatot de ez igazából egy column (TypeORM megcsinálja), amit itt alul meg is kell adni
+
+  @Column()
+  userId: number;
 }
 
 // TypeORM Entity: Interface (TaskModel) helyett is tud működni
